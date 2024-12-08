@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Satoshi: ['Satoshi', 'sans-serif'],  
+        Integral: ['"Integral CF"', 'sans-serif'], 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
