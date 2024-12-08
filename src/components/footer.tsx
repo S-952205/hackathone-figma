@@ -5,6 +5,11 @@ import Facebook from './facebook';
 import Instagram from './instagram';
 import Github from './github';
 import Link from 'next/link';
+import Visa from './visa';
+import Visatwo from './visatwo';
+import Paypal from './paypal';
+import Apple from './apple';
+import Gpay from './gpay';
 
 const Footer = () => {
   return (
@@ -64,28 +69,28 @@ const Footer = () => {
 
             {/**Social Media Links */}
             <div className="w-[148px] h-[28px] flex flex-row justify-between">
-            <Link href={''}>
-              <div className="w-[28px] h-[28px]">
-                <Twitter />
-              </div>
+              <Link href={""}>
+                <div className="w-[28px] h-[28px]">
+                  <Twitter />
+                </div>
               </Link>
 
-              <Link href={''}>
-              <div className="w-[28px] h-[28px]">
-                <Facebook />
-              </div>
+              <Link href={""}>
+                <div className="w-[28px] h-[28px]">
+                  <Facebook />
+                </div>
               </Link>
 
-              <Link href={''}>
-              <div className="w-[28px] h-[28px]">
-                <Instagram />
-              </div>
+              <Link href={""}>
+                <div className="w-[28px] h-[28px]">
+                  <Instagram />
+                </div>
               </Link>
 
-              <Link href={''}>
-              <div className="w-[28px] h-[28px]">
-                <Github />
-              </div>
+              <Link href={""}>
+                <div className="w-[28px] h-[28px]">
+                  <Github />
+                </div>
               </Link>
             </div>
           </div>
@@ -179,7 +184,40 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-[1240px] h-px bg-black/10 mb-4 mx-auto"></div>
+        {/**Footer Copyright */}
+        <div className="w-[1240px] h-px bg-black/10 mb-4 mx-auto relative">
+          <div className="w-[269px] h-[19px] absolute left-[0px] top-[40px]">
+            <p className="font-Satoshi font-[400] text-[14px]">
+              Shop.co © 2000-2023, All Rights Reserved
+            </p>
+          </div>
+
+           {/**Visa Card Paypal and all money card */}
+          <div className="w-[281.07px] h-[30.03px]
+           flex flex-row justify-between absolute right-[0px] top-[21px]">
+
+            <div className="w-[46.61px] h-[30.3px]">
+              <Visa/>
+            </div>
+
+            <div className="w-[46.61px] h-[30.3px]">
+              <Visatwo/>
+            </div>
+
+            <div className="w-[46.61px] h-[30.3px]">
+              <Paypal/>
+            </div>
+
+            <div className="w-[46.61px] h-[30.3px]">
+              <Apple/>
+            </div>
+
+            <div className="w-[46.61px] h-[30.3px]">
+              <Gpay/>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   );

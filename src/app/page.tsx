@@ -6,6 +6,9 @@ import Navbar from "@/components/navbar";
 import Review from "@/components/review";
 import Reviewsection from "@/components/reviewsection";
 import Topheader from "@/components/topheader";
+import Newarrivals from "@/components/newarrivals";
+import Sales from "@/components/sales";
+import Salesrates from "@/components/salesrates";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <Herosub/>
+      <Newarrivals/>
+      <Sales/>
+      <Salesrates/>
       <Dresstyle/> 
       <Review/>
       <Reviewsection/>
