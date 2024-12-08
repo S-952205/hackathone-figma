@@ -1,5 +1,4 @@
 import React from 'react'
-import Brands from './prada'
 import Versace from './versace'
 import Gucci from './gucci'
 import Zara from './zara'
