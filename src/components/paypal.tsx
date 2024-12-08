@@ -49,7 +49,7 @@ const Paypal = () => {
             width="64.9911"
             height="48.4071"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
