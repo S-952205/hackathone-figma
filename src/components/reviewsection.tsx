@@ -26,7 +26,7 @@ const Reviewsection = () => {
             {/**Person name and compliment who gave reviewd*/}
             <div className="w-[336px] h-[124px]">
               <div className="w-[110px] h-[24px] flex flex-row justify-between ">
-                <p className="font-Satoshi font-[700] text-20px">Sarah M.</p>
+                <p className="font-Satoshi font-[700] text-20px text-black">Sarah M.</p>
                 <div className="w-[24px] h-[24px] flex justify-center items-center">
                   <Greentick />
                 </div>
@@ -34,9 +34,9 @@ const Reviewsection = () => {
             </div>
 
             <p className="font-Satoshi font-[400px] text-black/60  text-[16px]">
-              "I&rdquo;m blown away by the quality and style of the clothes I received
+              "I&#39;m blown away by the quality and style of the clothes I received
               from Shop.co. From casual wear to elegant dresses, every piece
-              I&rdquo;ve bought has exceeded my expectations.”
+              I&#39;ve bought has exceeded my expectations.”
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Reviewsection = () => {
             {/**Person name and compliment who gave reviewd*/}
             <div className="w-[336px] h-[146px]">
               <div className="w-[93px] h-[24px] flex flex-row justify-between ">
-                <p className="font-Satoshi font-[700] text-[16px]">Alex K.</p>
+                <p className="font-Satoshi font-[700] text-[16px] text-black">Alex K.</p>
                 <div className="w-[24px] h-[24px] flex justify-center items-center">
                   <Greentick />
                 </div>
@@ -93,7 +93,7 @@ const Reviewsection = () => {
             {/**Person name and compliment who gave reviewd*/}
             <div className="w-[336px] h-[146px]">
               <div className="w-[111px] h-[24px] flex flex-row justify-between ">
-                <p className="font-Satoshi font-[700] text-20px">James L.</p>
+                <p className="font-Satoshi font-[700] text-20px text-black">James L.</p>
                 <div className="w-[24px] h-[24px] flex justify-center items-center">
                   <Greentick />
                 </div>
@@ -101,8 +101,8 @@ const Reviewsection = () => {
             </div>
 
             <p className="font-Satoshi font-[400px] text-black/60 text-[16px]">
-              "As someone who&rdquo;s always on the lookout for unique fashion pieces,
-              I'm thrilled to have stumbled upon Shop.co. The selection of
+              "As someone who&#39;s always on the lookout for unique fashion pieces,
+              I&#39;m thrilled to have stumbled upon Shop.co. The selection of
               clothes is not only diverse but also on-point with the latest
               trends.”
             </p>

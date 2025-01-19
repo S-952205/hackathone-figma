@@ -4,9 +4,9 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className="w-[1440px] relative mx-auto mt-[44px]"> {/**Heading */}
+    <div className="max-w-[1440px] relative mx-auto mt-[44px]"> {/**Heading */}
       <div className="w-[577px] h-[173px] absolute left-[110px] top-[0]">
-        <p className="font-Integral font-[700] text-[64px]">
+        <p className="font-Integral font-[700] text-[64px] text-black">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
       </div>
@@ -27,10 +27,10 @@ const Hero = () => {
       <div
         className="w-[210px] h-[52px] rounded-[62px] px-[54px] py-[16px]
         bg-black text-white flex justify-center
-         items-center absolute left-[110px] top-[407px]"
+         items-center absolute left-[110px] top-[407px] animate-bounce"
       >
         <Link href={''}>
-           <p className="font-Satoshi font-[500] text-[16px]">Shop Now</p>
+           <p className="font-Satoshi font-[500] text-[16px] ">Shop Now</p>
         </Link> 
       </div>
 

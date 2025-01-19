@@ -8,8 +8,8 @@ import Calvin from './calvin'
 const Herosub = () => {
   return (
     <div>
-       <div className='h-[122px] bg-black mx-auto mt-[0px]
-        flex items-center justify-evenly'> {/**All Brands div*/}
+       <div className='bg-black mx-auto mt-[0px] p-[38px]
+        flex items-center lg:justify-evenly flex-wrap gap-10'> {/**All Brands div*/}
            <Versace/>
            <Zara/>
            <Gucci/>

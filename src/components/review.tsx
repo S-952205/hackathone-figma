@@ -5,12 +5,12 @@ import Link from 'next/link'
 
 const Review = () => {
   return (
- <div className="">
+ <div className="mt-[100px]">
   {/* Parent Container */}
   <div className="w-[1239px] h-[83px]
   flex flex-row justify-between mx-auto">
 
-      <p className="font-Integral font-[700] text-[48px]">
+      <p className="font-Integral font-[700] text-[48px] text-black ">
         OUR HAPPY CUSTOMERS
       </p>
 
