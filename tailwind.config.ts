@@ -18,9 +18,9 @@ const config: Config = {
   				'sans-serif'
   			],
   			Integral: [
-  				'Integral CF"',
+  				'Integral CF',
   				'sans-serif'
-  			]
+  			],
   		},
   		colors: {
   			background: 'hsl(var(--background))',
