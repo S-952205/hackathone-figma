@@ -6,14 +6,15 @@ const Reviewsection = () => {
   return (
     <div>
       <div
-        className="w-[1239px] h-[241px]
-        my-[45px] mx-auto flex flex-row justify-between"
+        className="w-[98%] md:max-w-[1239px] h-auto md:h-[241px]
+        my-[45px] mx-auto grid grid-cols-1 gap-2 md:gap-0 md:flex md:flex-row
+        md:justify-between"
       >
         <div
-          className="w-[400px] h-[240px] rounded-[20px]
-         border-[1px] py-[28px] px-[38px] "
+          className="max-w-[400px] h-[240px] rounded-[20px]
+         border-[1px] px-[24px] py-[24px] md:py-[28px] md:px-[38px] "
         >
-          <div className="w-[336px] h-[161px] flex flex-col gap-[12px]">
+          <div className="max-w-[336px] h-[161px] flex flex-col gap-[12px]">
             {/**Review Stars */}
             <div className="w-[138.84px] h-[22.58px] flex flex-row justify-between">
               <Stars />
@@ -43,10 +44,10 @@ const Reviewsection = () => {
 
         {/**Second person review */}
         <div
-          className="w-[400px] h-[240px]
-          rounded-[20px] border-[1px] py-[28px] px-[38px]"
+          className="max-w-[400px] h-[240px]
+          rounded-[20px] border-[1px] py-[24px] px-[24px] md:py-[28px] md:px-[38px]"
         >
-          <div className="w-[336px] h-[183.58px] flex flex-col gap-[12px]">
+          <div className="max-w-[336px] h-[183.58px] flex flex-col gap-[12px]">
             {/**Review Stars */}
             <div className="w-[138.84px] h-[22.58px] flex flex-row justify-between">
               <Stars />
@@ -77,10 +78,10 @@ const Reviewsection = () => {
 
         {/**third person review */}
         <div
-          className="w-[400px] h-[240px]
-          rounded-[20px] border-[1px] py-[28px] px-[38px]"
+          className="max-w-[400px] h-[240px]
+          rounded-[20px] border-[1px] py-[24px] px-[24px] md:py-[28px] md:px-[38px]"
         >
-          <div className="w-[336px] h-[183.58px] flex flex-col gap-[12px]">
+          <div className="max-w-[336px] h-[183.58px] flex flex-col gap-[12px]">
             {/**Review Stars */}
             <div className="w-[138.84px] h-[22.58px] flex flex-row justify-between">
               <Stars />

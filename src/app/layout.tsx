@@ -7,6 +7,8 @@ import Navbar from "@/components/navbar";
 import Providers from "./providers";
 
 
+
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -36,27 +38,15 @@ export default function RootLayout({
       >
         
         <Providers>
-        <Topheader/>
-        <Navbar/>
+          <Topheader />
+          <Navbar />
 
-        {children}
-        <Footer/>
+          {children}
+          <Footer />
         </Providers>
 
       </body>
     </html>
-    
-    // <html lang="en">
-    //   <body
-    //     className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    //   >
-    //     {!isStudioRoute && <Topheader />} {/* Topheader excluded for /studio */}
-    //     <Providers>
-    //       {!isStudioRoute && <Navbar />} {/* Navbar excluded for /studio */}
-    //       {children}
-    //       {!isStudioRoute && <Footer />} {/* Footer excluded for /studio */}
-    //     </Providers>
-    //   </body>
-    // </html>
+
   );
 }

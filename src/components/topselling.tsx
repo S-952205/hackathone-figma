@@ -20,43 +20,56 @@ export interface Product {
 
 //data ko fetch kiya sanity database say grog query say query krkay
 async function gettopsells() {
-  const query = await client.fetch(`* [_type == 'products' && 
-   title in ['Vertical Striped Shirt',
-             'COURAGE GRAPHIC T-SHIRT', 'LOOSE FIT BERMUDA SHORTS',
-            'Classic Black Straight-Leg Jeans']]
-{
-  _id,
-    title,
-    "imageUrl": image.asset->url,
-    description,
-    price,
-    discountprice,
-    discountpercent,
-    rating,
-    'slug':slug.current,
-    category,
-}`)
+  try {
+    const query = await client.fetch(`* [_type == 'products' && 
+      title in ['Vertical Striped Shirt',
+                'Courage Graphic T-Shirt', 'Loose Fit Bermuda Shorts',
+               'Classic Black Straight-Leg Jeans']]
+   {
+     _id,
+       title,
+       "imageUrl": image.asset->url,
+       description,
+       price,
+       discountprice,
+       discountpercent,
+       rating,
+       'slug':slug.current,
+       category,
+   }`)
 
-  return query;
+    return query;
+  } catch (error) {
+    console.log('error fetching data from sanity', error);
+    return [];
+  }
+
 
 }
 
 const Topselling = () => {
 
-   // State to store fetched data <any[]> means kisi bhee type ka data store hoskta 
+  // State to store fetched data <any[]> means kisi bhee type ka data store hoskta 
   const [topsells, setTopsells] = useState<any[]>([]); //empty array shuru main ([])
+  const [error, setErrors] = useState('');
 
   //ab ye component pehli baar render hota hai, useEffect chalega aur data
   //fetch karne ka kaam shuru karega
   useEffect(() => {
     // Fetch the data when the component mounts (mount means render)
     const fetchData = async () => {
-      const data = await gettopsells(); //function ke through Sanity se data fetch hota hai.
-      setTopsells(data);
+      try {
+        const data = await gettopsells(); //function ke through Sanity se data fetch hota hai.
+        setTopsells(data);
+      } catch (error) {
+        console.log('error in fetchdata useeffect setting data in topsells', error);
+
+      }
+
     };
-    
+
     fetchData(); // Call the function to fetch data
-  }, []); 
+  }, []);
 
   return (
     <div className='mt-[50px] mb-[100px]'>
@@ -67,7 +80,7 @@ const Topselling = () => {
         </div>
 
         <div className='w-[1240px] h-[413px] mx-auto mt-[70px] mb-[700px] flex flex-row justify-between'>
-          {topsells.map((item:any, i:number) => {
+          {topsells.map((item: any, i: number) => {
             return (
               <div key={i}>
                 <Link href={`/${item.category}/${item.slug}`}>
@@ -91,7 +104,7 @@ const Topselling = () => {
                       {/**logic lagai hai jo rating kee base pay stars generate kray gee ratibg mtlb 2 3 4 5 */}
                       {Array.from({ length: Math.floor(item.rating) }).map(
                         (_, i) => (
-                          <Pricestar key={i}/>
+                          <Pricestar key={i} />
                         )
                       )}
 
@@ -137,9 +150,11 @@ const Topselling = () => {
                       </div>
                     }
                   </div>
+                  
                 </div>
-
+               
               </div>
+              
             );
           })}
 

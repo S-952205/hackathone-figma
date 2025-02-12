@@ -7,16 +7,16 @@ const Review = () => {
   return (
  <div className="mt-[100px]">
   {/* Parent Container */}
-  <div className="w-[1239px] h-[83px]
+  <div className="w-[95%] md:max-w-[1239px] h-auto md:h-[83px]
   flex flex-row justify-between mx-auto">
 
-      <p className="font-Integral font-[700] text-[48px] text-black ">
+      <p className="font-Integral font-[700] text-[32px] md:text-[48px] text-black ">
         OUR HAPPY CUSTOMERS
       </p>
 
 
     {/* Arrows */}
-    <div className="flex space-x-4 mt-[46px]">
+    <div className="flex items-center lg:items-start space-x-4 mt-[46px]">
       <div className="w-[24px] h-[24px]">
         <Link href={''}><Leftrightarrow/></Link>
       </div>

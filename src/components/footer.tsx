@@ -221,34 +221,35 @@ const Footer = () => {
         <div className="divider w-[90%] md:w-[1240px] mx-auto"></div> {/**divider after filter */}
 
         {/**Footer Copyright */}
-        <div className="max-w-[1240px] flex flex-col justify-center items-center gap-4 bg-black/10 mx-auto relative">
-          <div className="w-[269px] h-[19px] md:absolute md:left-[0px] md:top-[40px]">
-            <p className="font-Satoshi font-[400] text-[14px]">
+        <div className="max-w-[1240px] h-auto flex flex-col justify-center items-center gap-2 bg-black/10 mx-auto relative">
+          <div className="w-[269px] h-[19px]
+                md:absolute md:left-[0px] md:top-[40px]">
+            <p className="font-Satoshi font-[400] text-[14px] mt-1 md:mt-0">
               Shop.co © 2000-2023, All Rights Reserved
             </p>
           </div>
 
            {/**Visa Card Paypal and all money card */}
-          <div className="w-[281.07px] h-[30.03px]
+          <div className="w-[281.07px] h-auto md:h-[30.03px]
            flex flex-row justify-between md:absolute md:right-[0px] md:top-[21px]">
 
-            <div className="w-[46.61px] h-[30.3px]">
+            <div className="w-[46.61px] h-auto md:h-[30.3px]">
               <Visa/>
             </div>
 
-            <div className="w-[46.61px] h-[30.3px]">
+            <div className="w-[46.61px] h-auto md:h-[30.3px]">
               <Visatwo/>
             </div>
 
-            <div className="w-[46.61px] h-[30.3px]">
+            <div className="w-[46.61px] h-auto md:h-[30.3px]">
               <Paypal/>
             </div>
 
-            <div className="w-[46.61px] h-[30.3px]">
+            <div className="w-[46.61px] h-auto md:h-[30.3px]">
               <Apple/>
             </div>
 
-            <div className="w-[46.61px] h-[30.3px]">
+            <div className="w-[46.61px] h-auto md:h-[30.3px]">
               <Gpay/>
             </div>
 

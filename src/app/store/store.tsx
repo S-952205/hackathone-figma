@@ -1,17 +1,34 @@
-import { configureStore } from '@reduxjs/toolkit'
-import productSlice  from './feature/product'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import  cartSlice  from './feature/cart'
-// ...
+import storage from 'redux-persist/lib/storage'
+import {persistReducer} from 'redux-persist'
 
-export const store = configureStore({
-  reducer: {
-    products:productSlice,
-    cart:cartSlice
+const persistConfiq = {
+  key: 'root',
+  version: 1,
+  storage,
+}
 
-  },
+const reducer = combineReducers({
+  cart:cartSlice
 })
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
+const persistedReducer = persistReducer(persistConfiq, reducer)
+
+/**Redux mein serializable values ka use karna zaruri hota hai, kyun ke Redux ka kaam state ko
+ * track karna aur usko save karna hai. Serializable values wo hoti 
+ * hain jo simple data types mein convert ho sakti hain */
+
+export const store = configureStore({
+  reducer: persistedReducer,
+
+    middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck:false // Disable serializable check
+    }),
+  
+});
+
+
 export type RootState = ReturnType<typeof store.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch

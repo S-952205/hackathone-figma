@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.hero-img {
+     background-image: url('/hero.png');
+}
+
+
 /* globals.css */
 @font-face {
     font-family: 'Satoshi';

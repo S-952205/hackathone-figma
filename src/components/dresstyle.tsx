@@ -6,7 +6,7 @@ const Dresstyle = () => {
   return (
 
     <div className='w-[1239px] h-[866px] bg bg-[#F0F0F0]
-     mx-auto  mt-[100px] relative rounded-[40px]'>
+     mx-auto mt-[100px] relative rounded-[40px]'>
 
       {/**Main Heading in center of div */}
       <div className='w-[687px] h-[58px] absolute left-[276px] top-[30px]'>
