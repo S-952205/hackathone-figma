@@ -6,7 +6,7 @@ import Reviewsection from "@/components/reviewsection";
 import Topselling from "@/components/topselling";
 import Divider from "@/components/divider";
 import NewArrival from "@/components/newArrival";
-import DeleteCartToast from "@/components/deleteCartToast";
+
 
 
 
