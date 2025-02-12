@@ -8,7 +8,7 @@ import Profileicon from './profileicon';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FiSearch } from 'react-icons/fi';
 import { useAppSelector } from '@/app/store/hooks';
-import Search from './search/Search';
+
 
 
 const Navbar = () => {
@@ -79,7 +79,24 @@ const Navbar = () => {
         </div>
 
         {/**Nav search bar */}
-         <Search/>
+        <div
+      className="w-[577px] h-[48px]  text-white/40  bg-[#F0F0F0]
+    rounded-[62px] hidden px-[16px] py-[12px] lg:flex items-center"
+    >
+      <div className="w-[24px] h-[24px] flex items-center justify-center mr-[12px]">
+        <Link href={""}>
+          <Searchicon />
+        </Link>
+      </div>
+
+      <input
+        type="text"
+        placeholder="Search for products..."
+        className=" bg-[#F0F0F0] hidden lg:block  outline-none text-[#909090]
+        h-[24px] text-[16px] font-Satoshi font-[400px]"
+        
+      />
+    </div>
 
         {/**Profile and cart icon */}
         <div className='w-[94px] md:w-[62px] h-[24px] grow md:grow-0 flex justify-end gap-[12px] md:justify-between md:items-center'>
