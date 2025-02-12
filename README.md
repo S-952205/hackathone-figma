@@ -10,6 +10,7 @@ Day 1: Schema Design & Business Goal
 ------------------------------------
 
 1:Defined the business goal: The website focuses on affordable clothing, free delivery, and accessibility for all age groups.
+
 2: Designed the database schema:
   - Products: Stores details of available products.
   - Orders: Manages customer orders.
